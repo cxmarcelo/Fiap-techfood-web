@@ -1,1 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --color-dark-yellow: #e49424;
+    --color-yellow: #ec9c34;
+    --color-red: #590e0e;
+    --color-grey: #887b6c;
+    --color-beige: #c9a28e;
+    --color-brown: #3b271c;
+
+    //Light Mode
+    --scroll-bar-color-bg: #f1f1f1;
+    --scroll-bar-color-fill: #E95420;
+    --scroll-bar-color-fill-hover: #ba4319;
+
+    --bg-primary: #FFF;
+    --bg-secondary: #222;
+
+    --bg-linear-gradient: linear-gradient(145deg, rgba(233, 84, 32, 1) 0%, rgba(174, 167, 159, 1) 50%, rgba(233, 84, 32, 1) 100%);
+
+    //MENU
+    --text-menu: white;
+    --text-menu-active: var(--color-yellow);
+    --bg-menu: var(--color-red);
+    //ENDMENU
+
+    //footer
+    --bg-footer: var(--color-red);
+    //
+
+    --text-primary: #f1f1f1;
+    --text-secondary: #333333;
+    --text-high-light-primary: #E95420;
+    --text-high-light-secondary: #333333;
+
+    --primary: #430b0b;
+
+    //COMPONENTS
+    --btn-primary-color: #E95420;
+    --btn-primary-color-hover: #D14B1C;
+    --btn-primary-color-toggle: #333333;
+
+}
+
+:root .dark-theme {
+    //Dark Mode
+    --orange: #d14b1c;
+    --orange_minus: #eb6536;
+    --orange_plus: #d14b1c;
+
+    --bg: #111320;
+    --bg_minus: #282a36;
+    --bg_plus: #0f111c;
+
+    --blue: #20b5e9;
+    --blue_minus: #36bceb;
+    --blue_plus: #1ca2d1;
+
+
+    --scroll-bar-color-bg: #0d0f19; //antigo #333333
+    --scroll-bar-color-fill: #E95420;
+    --scroll-bar-color-fill-hover: #D14B1C;
+
+    --bg-primary: #111320;
+    --bg-linear-gradient: linear-gradient(145deg, rgb(17, 19, 32) 0%, rgb(17, 19, 32) 70%, rgb(17, 19, 32) 100%);
+
+    --text-menu: #fff;
+    --text-menu-active: #E95420;
+
+    --text-primary: #fff;
+    --text-secondary: #333333;
+
+    --text-high-light-primary: #E95420;
+    --text-high-light-secondary: #20b5e9;
+
+    --bg-card-primary: #333333;
+
+    --primary: #111320;
+    --terminal-color: #2C001E;
+
+    --display-light: none;
+    --display-dark: block;
+
+    //COMPONENTS
+    --btn-primary-color: #1d2235;
+    --btn-primary-color-border: #E95420;
+    --btn-primary-color-hover: #D14B1C;
+    --btn-primary-color-toggle: #20b5e9;
+
+    --bg-footer: #1a1d31;
+
+}
+
+.img-display-light {
+    display: var(--display-light);
+}
+
+.img-display-dark {
+    display: var(--display-dark);
+}
+
+.text-menu {
+    color: var(--text-menu) !important;
+}
+
+.text-primary-color {
+    color: var(--text-primary);
+}
+
+.bg-primary-color {
+    background-color: var(--primary);
+}
+
+.bg-secondary-color {
+    background-color: var(--bg-secondary)
+}
+
+.bg-card-primary {
+    background-color: var(--bg-card-primary)
+}
+
+.bg-menu {
+    background-color: var(--bg-menu)
+}
+
+.btn.btn-primary {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color-border);
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-color-hover);
+    border-color: var(--btn-primary-color-hover);
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba($color: var(--btn-primary-color), $alpha: 0.9);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: rgba($color: var(--btn-primary-color), $alpha: 0.4);
+    border-color: rgba($color: var(--btn-primary-color), $alpha: 0.4);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--btn-primary-color-toggle);
+    border-color: var(--btn-primary-color-toggle);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba($color: var(--btn-primary-color), $alpha: 0.5);
+}
+
+.text-primary-color {
+    color: var(--text-primary);
+}
+
+.text-high-light-primary {
+    color: var(--text-high-light-primary);
+}
+
+.text-high-light-secondary {
+    color: var(--text-high-light-secondary);
+}
+
+.background-primary {
+    background: var(--bg-primary);
+    //background: var(--bg-linear-gradient);
+    //background-image: url('./assets/imgs/wallpaper/bg_02.png');
+    //background-repeat: repeat;
+}
+
+
+
+//TODO COLORS
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--scroll-bar-color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar-color-fill);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-bar-color-fill-hover);
+}

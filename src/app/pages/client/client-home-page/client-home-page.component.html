@@ -1,0 +1,15 @@
+<div class="container-fluid" style="height: 100%;">
+    <div class="d-flex align-items-center row" style="height: 100%;">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="card" style="min-width: 600px;">
+                <div class="card-body">
+                    <ng-container [ngSwitch]="CURRENT_STEP">
+                        <app-home-step *ngSwitchCase="1" (stepChangeEvent)="changeStep($event)"></app-home-step>
+                        <app-client-login-step *ngSwitchCase="2" [formGroup]="formGroup" (stepChangeEvent)="changeStep($event)"></app-client-login-step>
+                        <app-product-select-step *ngSwitchCase="3" (stepChangeEvent)="changeStep($event)"></app-product-select-step>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

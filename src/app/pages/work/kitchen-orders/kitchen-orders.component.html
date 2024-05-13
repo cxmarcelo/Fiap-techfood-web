@@ -1,0 +1,61 @@
+<div class="container-fluid p-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">
+                        <span class="mx-2">
+                            {{orderList? orderList.length : 0 }} Toatal Pedidos
+                        </span>
+                        <span class="mx-2">
+                            {{orderList? orderList.length : 0 }} Pedidos Atrasados
+                        </span>
+                        <span class="mx-2">
+                            {{orderList? orderList.length : 0 }} Pedidos Novos
+                        </span>
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-12 col-xxl-3 my-2" *ngFor="let order of orderList">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                Pedido João
+                            </div>
+                            <div class="">
+                                23:40
+                            </div>
+                        </div>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">3 Lanches 2 Acompanhamentos 2 bebidas</h6>
+                    <div>
+                        <h5>Lanches</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                X-Tudo (extra: queijo) (sem: cebola)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                X-Bacon (sem: queijo)
+                            </label>
+                        </div>
+
+
+                    </div>
+                    <button class="btn btn-primary">Finalizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
